@@ -33,11 +33,10 @@ end
 end
 
   
-  def void_last_transaction(price, quantity - 1)
-    #@total = 0, => this will pass but it isn't correct
-    @last_trans = price * quantity
-    @total -= @last_trans
+  def void_last_transaction()
+    @total -= @last_transaction_amount
   end
+
 end
   
 end
