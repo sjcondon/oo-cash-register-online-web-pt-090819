@@ -13,8 +13,8 @@ attr_accessor :total, :discount, :last_trans, :items
       i = 0
     
     while i < quantity
-    @item << title
-     += 1
+    @item << title 
+    quantity += 1
   end
   else
     @item << title
