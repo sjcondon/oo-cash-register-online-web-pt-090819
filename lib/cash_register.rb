@@ -1,6 +1,6 @@
 class Cashregister
 
-attr_accessor :total, :discount, :last_trans
+attr_accessor :total, :discount, :last_trans, :items
 
   def initalize(discount = 0)
     @total = 0
