@@ -19,6 +19,10 @@ attr_accessor :total, :discount, :last_trans, :items
   else
     @item << title
 end
+  @total += price*quantity
+  @last_transaction_amount = @total
+  @total
+end
 
   def apply_discount
     if discount > 0
@@ -28,9 +32,6 @@ end
   end
 end
 
-  def items
-   @items
-  end
   
   def void_last_transaction(price, quantity - 1)
     #@total = 0, => this will pass but it isn't correct
