@@ -9,12 +9,15 @@ attr_accessor :total, :discount, :last_trans, :items
   end
   
   def add_item(title, price, quantity = 1)
-    self.total += (price * quantity)
+  if quantity>1
+      i = 0
     
-    while quantity > 0
+    while i < quantity
     @item << title
      += 1
   end
+  else
+    @item << title
 end
 
   def apply_discount
